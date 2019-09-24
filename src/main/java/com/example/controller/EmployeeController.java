@@ -55,7 +55,7 @@ public class EmployeeController {
 
 	}
 
-	@PutMapping(consumes = { "appilaction/json" })
+	@PutMapping
 	public String update(@Valid @RequestBody Employee e) {
 		int res = edao.updateEmp(e);
 		if (res <= 0) {
